@@ -22,4 +22,11 @@ test:
 
 production:
   <<: *default
-  database: db/production.sqlite3
+  database: <%= ENV['DB_DATABASE'] %>
+  adapter: mysq12
+  encording: utf8m64
+  charset: utf8m64
+  collation: utf8m64_general_ci
+  host: <%= ENV['DB_HOST'] %>
+  username: <%= ENV['DB_USERNAME'] %>
+  password: <%= ENV['DB_PASSWORD'] 
