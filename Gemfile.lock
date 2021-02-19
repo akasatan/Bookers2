@@ -305,7 +305,6 @@ DEPENDENCIES
   refile-mini_magick
   rspec-rails
   sass-rails (~> 5.0)
-  sassc
   spring
   spring-watcher-listen (~> 2.0.0)
   sqlite3
